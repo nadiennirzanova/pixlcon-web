@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixIcon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+  </style>
+</head>
+
+<body class="min-h-screen bg-[radial-gradient(1100px_700px_at_50%_18%,rgba(255,42,161,.30),transparent_65%),radial-gradient(900px_600px_at_20%_40%,rgba(255,103,196,.20),transparent_60%),radial-gradient(900px_600px_at_85%_45%,rgba(255,103,196,.12),transparent_60%),linear-gradient(180deg,#ffffff_0%,#fff3fb_55%,#ffffff_100%)]">
+
+  <header class="sticky top-0 z-10 border-b border-black/5 bg-white/70 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-[1200px] items-center gap-6 px-6 py-4">
+      <div class="flex items-center gap-3">
+        <div class="h-8 w-8 rounded-xl bg-gradient-to-br from-[#ff2aa1] to-[#ff67c4] shadow-lg"></div>
+        <div class="text-lg font-black">PixIcon</div>
+      </div>
+
+      <nav class="mx-auto hidden items-center gap-6 text-sm font-semibold text-black/85 md:flex">
+        <a href="#" class="hover:text-black">Features</a>
+        <a href="pricing.html" class="hover:text-black">Pricing</a>
+        <a href="result.html" class="hover:text-black">About</a>
+        <a href="#" class="hover:text-black">Resources ▾</a>
+      </nav>
+
+      <div class="ml-auto flex items-center gap-4">
+        <span class="text-sm font-semibold text-black/85">Login</span>
+        <span class="inline-flex h-10 items-center justify-center rounded-full bg-gradient-to-b from-[#3a3a3a] to-[#0f0f0f] px-5 text-sm font-semibold text-white shadow-lg shadow-black/15">Sign Up</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="px-6">
+    <section class="mx-auto max-w-[800px] pt-10 pb-14 text-center">
+      <h1 class="text-[44px] leading-[52px] font-black tracking-[-1.2px] md:text-[72px] md:leading-[76px] md:tracking-[-1.6px]">
+        Create Custom Icons<br />
+        In Your <span class="text-[#ff2aa1]">Exact Style</span>
+      </h1>
+
+      <p class="mx-auto mt-4 max-w-[720px] text-base font-medium text-black/55 md:text-lg">
+        Upload one icon. Generate a full icon set that matches its<br class="hidden md:block" />
+        shape, stroke, color, and depth perfectly.
+      </p>
+
+      <div class="mt-7 rounded-[30px] border border-black/10 bg-white/75 p-5 shadow-[0_30px_85px_rgba(0,0,0,.12)]">
+        <div class="mx-auto max-w-[760px]">
+          <div class="h-[260px] md:h-[280px] rounded-[28px] border-2 border-dashed border-[#ff2aa1]/60 bg-white/85 flex flex-col items-center justify-center gap-2">
+            <img src="images/cloud.png" alt="cloud" class="h-9 w-9 object-contain" />
+            <div class="mt-1 text-lg font-extrabold text-black/85">Drag &amp; drop your reference icon</div>
+            <div class="text-sm font-semibold text-black/55">or click to browse • SVG, PNG, JPG</div>
+          </div>
+
+          <div class="mt-4 grid gap-3 md:grid-cols-[160px_1fr_190px] md:items-center">
+            <div class="h-12 rounded-full bg-black text-white text-sm font-semibold flex items-center justify-center gap-2">
+              <span>✨</span><span>20 Credits</span>
+            </div>
+
+            <div class="h-12 rounded-full border-2 border-black/10 bg-white/95 px-4 flex items-center gap-3 focus-within:border-[#ff2aa1]/80 focus-within:shadow-[0_10px_28px_rgba(255,42,161,.18)]">
+              <span class="text-black/60">⚙</span>
+              <input class="w-full bg-transparent outline-none text-sm font-semibold text-black placeholder:text-black/45" placeholder="e.g., A rocket ship taking off..." />
+            </div>
+
+            <a href="result.html" class="h-12 rounded-full bg-gradient-to-br from-[#ff2aa1] to-[#ff67c4] text-white text-sm font-semibold flex items-center justify-center shadow-[0_16px_44px_rgba(255,42,161,.34)]">
+              Generate Icon
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="px-6 pb-8">
+    <div class="mx-auto flex max-w-[1200px] items-center justify-between border-t border-black/5 pt-4 text-sm font-medium text-black/55">
+      <div>© 2026 PixIcon. Reference UI study.</div>
+      <div class="flex gap-4">
+        <a href="index.html" class="hover:text-black/80">Upload</a>
+        <a href="result.html" class="hover:text-black/80">Result</a>
+        <a href="pricing.html" class="hover:text-black/80">Pricing</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
