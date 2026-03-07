@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "448a3837-38ef-4004-8c82-0455428ac8b6",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Website Dev",
@@ -155,6 +155,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -238,7 +239,6 @@
               ]
             },
             "id": "091281d1-52e4-47cb-aa95-c1ea1b72c370",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Visitor",
@@ -254,7 +254,7 @@
           {
             "position": {
               "x": 50,
-              "y": 270
+              "y": 280
             },
             "size": {
               "width": 112.5,
@@ -272,6 +272,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -355,7 +356,6 @@
               ]
             },
             "id": "9b16b645-5339-4b60-9ff1-0af7e53b2238",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
@@ -370,7 +370,7 @@
           },
           {
             "position": {
-              "x": 283,
+              "x": 340,
               "y": 20
             },
             "size": {
@@ -389,6 +389,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -472,7 +473,6 @@
               ]
             },
             "id": "e945c751-1b15-40c0-ac90-695da3fb711e",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Public  \nWebsite",
@@ -490,7 +490,7 @@
           },
           {
             "position": {
-              "x": 238,
+              "x": 295,
               "y": 140
             },
             "size": {
@@ -509,6 +509,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -592,7 +593,6 @@
               ]
             },
             "id": "af2bf81a-08b7-4638-9e96-53ea21c2eb22",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Authentication",
@@ -610,7 +610,7 @@
           },
           {
             "position": {
-              "x": 283,
+              "x": 340,
               "y": 260
             },
             "size": {
@@ -629,6 +629,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -712,7 +713,6 @@
               ]
             },
             "id": "5a869931-a1fb-4721-ad6d-55c07a45ce98",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "Transactions",
@@ -730,7 +730,7 @@
           },
           {
             "position": {
-              "x": 470,
+              "x": 660,
               "y": 40
             },
             "size": {
@@ -752,6 +752,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -835,7 +836,6 @@
               ]
             },
             "id": "2493d27f-c519-4c5d-9e78-389e95e73af6",
-            "zIndex": 7,
             "data": {
               "type": "tm.Store",
               "name": "Public\nWebpages",
@@ -854,7 +854,7 @@
           },
           {
             "position": {
-              "x": 470,
+              "x": 730,
               "y": 160
             },
             "size": {
@@ -876,6 +876,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -959,7 +960,6 @@
               ]
             },
             "id": "674a3ad6-6795-4fc0-884c-68e7433f1f9d",
-            "zIndex": 8,
             "data": {
               "type": "tm.Store",
               "name": "Authentication \nDatabase",
@@ -978,7 +978,7 @@
           },
           {
             "position": {
-              "x": 470,
+              "x": 730,
               "y": 280
             },
             "size": {
@@ -1000,6 +1000,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -1083,7 +1084,6 @@
               ]
             },
             "id": "22e3a57c-b68e-4533-a3fe-e72ada3ea3c4",
-            "zIndex": 9,
             "data": {
               "type": "tm.Store",
               "name": "Transaction \nDatabase",
@@ -1120,7 +1120,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Code Edit",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1134,17 +1134,23 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Code Edit"
             ],
-            "id": "45e1e116-18df-4596-aa54-99182fd82bdf",
+            "id": "cc963acb-bbaa-4f11-8265-ab1178715e2f",
             "source": {
-              "x": 90,
-              "y": 70
+              "cell": "448a3837-38ef-4004-8c82-0455428ac8b6",
+              "port": "6d746e4e-dd27-452f-8c68-1079dd217bd5"
             },
             "target": {
-              "x": 280,
-              "y": 140
+              "cell": "e945c751-1b15-40c0-ac90-695da3fb711e",
+              "port": "144fde03-7eae-48e7-a69a-393549784545"
             },
+            "vertices": [
+              {
+                "x": 410,
+                "y": 30
+              }
+            ],
             "tools": {
               "items": [
                 "boundary",
